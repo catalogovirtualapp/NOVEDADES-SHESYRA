@@ -80,7 +80,25 @@ function applyBusinessIdentity(){
   const footerStoreName = document.getElementById("footerStoreName");
   const logo = document.getElementById("storeLogo");
 
-  if(storeName) storeName.textContent = CONFIG.STORE_NAME;
+  if(storeName){
+
+  if(window.innerWidth <= 600 && CONFIG.STORE_NAME.length > 13){
+
+    const palabras = CONFIG.STORE_NAME.split(" ");
+    const mitad = Math.ceil(palabras.length / 2);
+
+    storeName.innerHTML =
+      palabras.slice(0, mitad).join(" ") +
+      "<br>" +
+      palabras.slice(mitad).join(" ");
+
+  }else{
+
+    storeName.textContent = CONFIG.STORE_NAME;
+
+  }
+
+}
   if(footerStoreName) footerStoreName.textContent = CONFIG.STORE_NAME;
   if(logo) logo.src = CONFIG.LOGO_URL;
 }
