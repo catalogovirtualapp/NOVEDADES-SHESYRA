@@ -63,7 +63,7 @@ button{
   transform-origin:center;
 }
 
-..brand h1{
+.brand h1{
   grid-column:2;
   text-align:center;
   font-size:18px;
