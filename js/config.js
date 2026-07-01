@@ -7,7 +7,7 @@
 
 const CONFIG = {
   /* IDENTIDAD DEL NEGOCIO */
-  STORE_NAME: "SOPHIE STORE",
+  STORE_NAME: "NOVEDADES SHESYRA",
 
   /* Logo fijo dentro de assets */
   LOGO_URL: "assets/logo.png",
@@ -17,7 +17,7 @@ const CONFIG = {
      Ejemplo:
      https://docs.google.com/spreadsheets/d/ESTE_ES_EL_ID/edit
   */
-  GOOGLE_SHEET_ID: "1D8q8jFn25qxf0wxr0SW9pJP9K4dIezOe-fWIzZVewBY",
+  GOOGLE_SHEET_ID: "1LDlnWs5Y2b67yq1UYVRSBBJWx36F0pVQVq4TLA2GFM4",
 
   /* Nombres exactos de las hojas */
   SHEETS: {
