@@ -7,7 +7,7 @@
 
 const CONFIG = {
   /* IDENTIDAD DEL NEGOCIO */
-  STORE_NAME: "NOVEDADES SHESYRA",
+  STORE_NAME: "NOVEDADES\nSHESYRA",
 
   /* Logo fijo dentro de assets */
   LOGO_URL: "assets/logo.png",
