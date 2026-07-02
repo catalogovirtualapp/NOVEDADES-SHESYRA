@@ -17,9 +17,14 @@ const StorageService = (() => {
      Aquí se guardan datos en el navegador del cliente.
   ============================= */
 
-  const CART_KEY = "catalog_cart";
-  const FAVORITES_KEY = "catalog_favorites";
-  const CACHE_KEY = "catalog_cache";
+  const STORE_KEY = String(CONFIG.STORE_NAME || "CATALOGO")
+    .toLowerCase()
+    .replace(/\s+/g, "_")
+    .replace(/[^\w]/g, "");
+
+  const CART_KEY = `catalog_cart_${STORE_KEY}`;
+  const FAVORITES_KEY = `catalog_favorites_${STORE_KEY}`;
+  const CACHE_KEY = `catalog_cache_${STORE_KEY}`;
 
   /* =============================
      VERSIÓN DE CACHÉ
